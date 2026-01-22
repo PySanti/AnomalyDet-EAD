@@ -1,2 +1,8 @@
 dep/
 data/
+datasets/
+pre_trained/
+results/
+versiones.txt
+dep-list.in
+estructura.txt
