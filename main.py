@@ -1,6 +1,6 @@
 import torch
 from pathlib import Path
-from anomalib.data import MVTecAD
+from anomalib.data import Folder, MVTecAD, AnomalibDataModule
 from anomalib.models import EfficientAd
 from anomalib.engine import Engine
 
@@ -22,7 +22,7 @@ if __name__ == "__main__":
         category=category,
         train_batch_size=1,  # recomendado para empezar con EfficientAd
         eval_batch_size=1,
-        num_workers=8
+        num_workers=1,
     )
 
     model = EfficientAd()
@@ -30,6 +30,7 @@ if __name__ == "__main__":
     engine = Engine(
         accelerator="auto",
         devices=1,
+        max_epochs=50
     )
 
     engine.fit(datamodule=datamodule, model=model)
