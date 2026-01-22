@@ -22,10 +22,10 @@ git clone https://github.com/PySanti/AnomalyDet-EAD
 cd AnomalyDet-EAD
 `
 
-3. Creacion de entorno virtual
+3. Creacion de entorno virtual : es necesario utilizar `python3.10`
 
 `
-python3 -m venv dep
+py -3.10 -m venv dep
 `
 
 4. Instalacion de dependencias
