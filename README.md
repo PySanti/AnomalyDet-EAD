@@ -28,13 +28,19 @@ cd AnomalyDet-EAD
 py -3.10 -m venv dep
 `
 
-4. Instalacion de dependencias
+4. Activacion de entorno virtual.
+
+`
+./dep/Scripts/activate
+`
+
+5. Instalacion de dependencias
 
 `
 pip3 install -r dep-list.txt
 `
 
-5. Ejecucion de pruebas
+6. Ejecucion de pruebas
 
 `
 python3 main.py
